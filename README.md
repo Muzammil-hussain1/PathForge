@@ -17,7 +17,7 @@ Organize your tasks into **To Do, On-Going, and Completed** sections with smooth
 ---
 
 ## 🖼️ Demo Screenshot  
-![App Screenshot](./screenshot.png)  
+![App Screenshot](./assets/Demo (2).png)  
 
 
 ---
