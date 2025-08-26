@@ -35,8 +35,13 @@ Organize your tasks into **To Do, On-Going, and Completed** sections with smooth
 ### Installation  
 Clone the repository and install dependencies:  
 
+
+
 git clone https://github.com/your-username/pathforge.git
+
 cd pathforge
+
 npm install
+
 npm run dev
 App will run at: http://localhost:5173
