@@ -26,7 +26,7 @@ Organize your tasks into **To Do, On-Going, and Completed** sections with smooth
 - [React](https://react.dev/)  
 - [Vite](https://vitejs.dev/)  
 - [React Icons](https://react-icons.github.io/react-icons/)  
-- [CSS]  for layout  
+- [CSS]   
 
 ---
 
