@@ -1,0 +1,282 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+body {
+background:linear-gradient(135deg,#F9FAFB 0%, #91afea  100%);
+margin: 0;
+min-height: 100vh
+}
+
+.app {
+    text-align: center;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home {
+    padding: 20px;
+} 
+
+.app h1 {
+    font-family: "Rubik Distressed", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  padding: 0px 18px 0px 0px;
+}
+
+.app p {
+    font-family: montserrat;
+    margin: -42px 29px 44px 3px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #feffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 8px rgb(255 255 255 / 81%);
+}
+
+.task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    width: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+        background: #fffcf96b;
+}
+
+.task-input:hover {
+    transform: scale(1.01);
+}
+
+.task-section {
+    width: 30%;
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform .18s ease, box-shadow .25s ease, border-color .25s ease;
+    background: linear-gradient(135deg, rgba(255,255,255,0.26), rgba(255,255,255,0.12));
+      backdrop-filter: blur(18px) saturate(180%);
+ box-shadow:  0 1px 1px rgba(255,255,255,0.4) inset,0 4px 24px rgba(0,0,0,0.12);    
+}
+.task-section:hover{
+    
+    transform: scale(1.05);
+}
+
+.tasks-sections{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.submit-button{
+   border: 1px solid rgba(156, 39, 176, 0.7);
+    box-shadow: inset 0 1px 3px rgba(156, 39, 176, 0.3);
+    background: linear-gradient(135deg, rgb(225 51 255 / 92%), rgba(103, 58, 183, 0.1));
+    padding: 6px 9px;
+    color: white;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #d7ffc3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgb(37 8 65 / 73%);
+}
+
+.task-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-section li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: cursive;
+    gap:10px;
+    flex-wrap: wrap;
+   font-weight: 500 ;
+    margin: 10px 6px 0px -26px  
+}
+
+
+.progress-tracker {
+   margin: 67px 32px 11px 51px;
+    text-align: center;
+}
+
+.progress-tracker p {
+  color: #ffffff;
+    text-shadow: unset;
+    padding: 10px 0px 1px 4px;
+    margin-bottom: 2px;
+    font-size: large;
+}
+
+.progress-bar  {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+ .progress {
+  height: 100%;
+  background-color: #4caf50;
+  transition: width 0.3s ease;
+ }
+
+ .item {
+     background: linear-gradient(135deg, rgba(255,255,255,0.35), rgba(255,255,255,0.15));
+      padding: 5px 10px 5px;
+      backdrop-filter: blur(12px) saturate(160%);
+       border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-transform: capitalize;
+ }
+
+ .del-btn {
+    background: rgb(246 165 165 / 96%);
+    backdrop-filter: blur(10px);
+    border: 2px solid #ff8383;
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px rgb(214 99 99 / 93%), 0 2px 8px rgb(0 0 0 / 6%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 4vw, 13px);
+    padding: 8px 37px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+ }
+
+ .task-section button {
+     flex: 1;
+    max-width: 123px;
+  
+    margin-left: 10px;
+
+    cursor: pointer;
+}
+
+ .del-btn:hover {
+  background: rgb(255 107 107);
+  box-shadow: 
+    inset 0 0 12px rgba(255, 107, 107, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.todo-btn {
+   background: rgb(83 174 255 / 67%);
+    border: 1px solid rgb(0 120 226);
+    box-shadow: 0 0 0 8px rgb(136 195 249 / 43%) inset, 0 2px 8px rgba(69, 167, 255, 0.15);
+    backdrop-filter: blur(10px);
+        border-radius: 12px;
+        color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 4vw, 13px);
+    padding:8px 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+ .todo-btn:hover {
+background: rgb(41 149 244 / 97%);
+    box-shadow: 0 0 0 12px rgba(69, 167, 255, 0.2) inset, 0 4px 12px rgba(69, 167, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.ong-btn {
+  background: rgb(243 189 101);
+    box-shadow: 0 0 0 8px rgb(255 160 7 / 4%) inset, 0 2px 8px rgba(253, 186, 78, 0.15);
+    border: 1px solid rgb(247 163 28);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 4vw, 13px);
+    padding: 8px 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+ .ong-btn:hover {
+background: rgb(238 147 0);
+    box-shadow: 0 0 0 12px rgb(222 158 54 / 9%) inset, 0 4px 12px rgb(90 60 12 / 25%);
+    transform: translateY(-2px);
+}
+
+.comp-btn {
+     background: rgb(56 230 131 / 49%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(27 183 95 / 97%);
+    border-radius: 12px;
+    box-shadow: inset 0 0 8px rgb(11 185 40 / 44%), 0 2px 8px rgb(54 236 133 / 25%);
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: clamp(13px, 4vw, 13px);
+    padding:8px 11px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+
+}
+ .comp-btn:hover {
+background: rgb(40 185 103 / 97%);
+    box-shadow: 0 0 0 12px rgb(16 183 2 / 15%) inset, 0 4px 12px rgb(11 72 29 / 32%);
+    transform: translateY(-2px)
+}
+
+.todo-icon {
+    padding: 6px 20px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 33px;
+    margin: -11px;
+}
+.ong-icon {
+    padding: 2px 24px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 33px;
+    margin: -11px;
+}
+.comp-icon {
+    padding: 3px 28px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 33px;
+    margin: -11px;
+}
+
+.add-icon {
+    display: inline-flex;
+    padding: 1px 2px;
+    margin-left: -7px;
+    margin-bottom: -3px;
+}
+
+
